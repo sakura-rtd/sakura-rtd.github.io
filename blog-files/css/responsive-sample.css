@@ -867,7 +867,7 @@ p.footer-link {
 }
 
 .jqmaintitle a,.jqmaintitle:before {
-	color:#666;
+	color:#666!important;
 	font-weight: 600;
 	padding-bottom:6px
 }
@@ -1667,6 +1667,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 .pull-left {
 	float:left!important;
 	display: inline-block!important;
+	margin-right: 20px !important;
 }
 
 .hide {
