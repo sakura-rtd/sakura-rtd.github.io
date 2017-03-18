@@ -869,7 +869,9 @@ p.footer-link {
 .jqmaintitle a,.jqmaintitle:before {
 	color:#666!important;
 	font-weight: 600;
-	padding-bottom:6px
+	padding-bottom:6px;
+	letter-spacing: 0 !important;
+	line-height: 1.5em;
 }
 
 .jqmaintitle a:hover {
