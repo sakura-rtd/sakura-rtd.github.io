@@ -226,6 +226,7 @@ body p {
 }
 
 #list-main .post.hentry {
+	border-bottom: #ddd 1px solid;
 }
 
 .post-outer {
