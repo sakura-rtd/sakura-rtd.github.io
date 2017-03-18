@@ -859,10 +859,7 @@ p.footer-link {
 .jqmaintitle {
 	margin:0;
 	font-size:18px;
-	padding:20px 0 10px 20px;
-	/* border-bottom:3px solid #e490bc;
-	border-top:1px solid #fff;
-	border-radius:3px */
+	/* padding:20px 0 10px 20px; */
 }
 
 .jqmaintitle:before {
@@ -1719,8 +1716,6 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 }
 
 .homapge-thumb {
-	margin:0;
-	padding:0;
 }
 
 .homapge-thumb .thumbx img {
