@@ -225,8 +225,8 @@ body p {
 	display: none;
 }
 
-#list-main .post.hentry {
-	border-bottom: #ddd 1px solid;
+#list-main .post-div {
+border-bottom: #ddd 1px solid;
 }
 
 .post-outer {
