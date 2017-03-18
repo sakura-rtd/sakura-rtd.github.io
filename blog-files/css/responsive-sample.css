@@ -217,7 +217,7 @@ body p {
 }
 
 .post {
-	padding:10px 30px;
+	padding:10px 0;
 	color:#666;
 	line-height:2em;
 }
@@ -3962,7 +3962,6 @@ ul.nav li.dropdown:hover>ul.dropdown-menu {
 	color:#888;
 	font-size:12px;
 	border:0;
-	padding: 0 20px 20px;
 }
 
 .s-clear {
