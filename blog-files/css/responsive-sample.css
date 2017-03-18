@@ -386,12 +386,7 @@ border-bottom: #ddd 1px solid;
 }
 
 .sidebar h2 {
-	padding: 20px;
-	color: #666;
 	font-size:15px;
-	font-weight:500;
-	line-height:1.2em;
-	margin-bottom:0;
 	margin-top:0
 }
 
@@ -406,16 +401,8 @@ border-bottom: #ddd 1px solid;
 }
 
 .sidebar .widget {
-	font-size:12px;
-	color:gray;
-	margin:0 0 10px;
 	overflow:hidden;
 	margin-bottom:20px;
-	background:#fff;
-	-webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
-	-moz-box-shadow:1px 1px 2px 0 #d0d0d0;
-	box-shadow:1px 1px 2px 0 #d0d0d0;
-	border-radius:5px
 }
 
 .sidebar .widget-content, .sidebar .post-summary {
@@ -1275,7 +1262,7 @@ hr {
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6, .item-title {
-	font-weight:500;
+	font-weight:400;
 	line-height:1.25;
 	color:inherit
 }
@@ -2509,15 +2496,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 }
 
 .navbar-default {
-	background:#222;
-	border:1px solid #222;
-	border-bottom:none;
-	background-image:-moz-linear-gradient(top,#222,#111);
-	background-image:-webkit-gradient(linear,0 0,0 100%,from(#222),to(#111));
-	background-image:-webkit-linear-gradient(top,#222,#111);
-	background-image:-o-linear-gradient(top,#222,#111);
-	background-image:linear-gradient(to bottom,#222,#111);
-	background-repeat:repeat-x
+	background:#bbb;
 }
 
 .navbar-default .navbar-brand {
