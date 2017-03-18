@@ -256,10 +256,10 @@ border-bottom: #ddd 1px solid;
 	margin-right:0.25em;
 }
 
-.post h2 a {
+/* .post h2 a {
 	color:#353737;
 	letter-spacing:-1px
-}
+} */
 
 .post h2 a:hover {
 	color:#666;
@@ -869,7 +869,6 @@ p.footer-link {
 .jqmaintitle a,.jqmaintitle:before {
 	font-weight: 500;
 	letter-spacing: 0 !important;
-	line-height: 1em;
 }
 
 .jqmaintitle a:hover {
