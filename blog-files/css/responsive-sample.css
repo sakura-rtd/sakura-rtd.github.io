@@ -225,7 +225,7 @@ body p {
 	display: none;
 }
 
-#list-main .post-div {
+#list-main row .post-div {
 border-bottom: #ddd 1px solid;
 }
 
