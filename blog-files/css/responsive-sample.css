@@ -1667,7 +1667,8 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 }
 
 .pull-left {
-	float:left!important
+	float:left!important;
+	display: inline-block;
 }
 
 .hide {
