@@ -1876,7 +1876,8 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 
 .nav>li {
 	position:relative;
-	display:block
+	display:block;
+	margin:0;
 }
 
 .nav>li>a {
