@@ -856,6 +856,7 @@ p.footer-link {
 }
 
 .jqmaintitle {
+	display: inline-block;
 	margin:0;
 	font-size:18px;
 	/* padding:20px 0 10px 20px; */
