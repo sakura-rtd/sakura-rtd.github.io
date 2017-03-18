@@ -177,7 +177,6 @@ body p {
 }
 
 .head-col {
-	padding:20px 0
 }
 
 #header {
@@ -216,8 +215,6 @@ body p {
 }
 
 .post {
-	color:#666;
-	line-height:2em;
 }
 
 #list-main .post.hentry div div{
@@ -461,14 +458,7 @@ border-bottom: #ddd 1px solid;
 
 
 #comments {
-	line-height:2em;
 	margin-bottom:10px;
-	background:#fff;
-	border-radius:5px;
-	-webkit-box-shadow:1px 1px 2px 0 #d0d0d0;
-	-moz-box-shadow:1px 1px 2px 0 #d0d0d0;
-	box-shadow:1px 1px 2px 0 #d0d0d0;
-	border:1px solid #ddd
 }
 
 #comments h4 {
@@ -646,7 +636,8 @@ p.footer-link {
 .post-header {
 	margin-bottom:30px;
 	margin-top:30px;
-	border-bottom:1px solid #ddd
+	border-bottom:1px solid #ddd;
+	padding-bottom: 3px;
 }
 
 .post-header .fa-tags {
@@ -1170,7 +1161,7 @@ body {
 	font-family:'Noto Sans Japanese',sans-serif;
 	font-size:14px;
 	line-height:1.428571429;
-	color:#333;
+	color:#444;
 	background-color:#fff
 }
 
