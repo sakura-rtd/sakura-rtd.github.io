@@ -215,11 +215,12 @@ body p {
 }
 
 .post {
+}
+#list-main .post.hentry {
 	max-height: 7.8em;
 	overflow: hidden;
 }
-
-#list-main .post.hentry div div{
+#list-main .post.hentry .rmlink, #list-main .post.hentry .rmlink {
 	display: none;
 }
 
