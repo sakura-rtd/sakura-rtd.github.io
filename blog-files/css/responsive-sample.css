@@ -346,6 +346,8 @@ border-bottom: #ddd 1px solid;
 	margin: 0.5em 0 2em 0;
 	display: block;
 	max-width: 100%;
+	border: 1px #eee solid;
+	padding: 1px;
 }
 
 .post .popup img {
@@ -1857,7 +1859,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 
 .nav>li>a:focus,.nav>li>a:hover {
 	text-decoration:none;
-	background-color:#000
+	background-color:#eee;
 }
 
 .nav>li.disabled>a {
