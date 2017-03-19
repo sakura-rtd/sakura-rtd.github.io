@@ -1859,7 +1859,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 
 .nav>li>a:focus,.nav>li>a:hover {
 	text-decoration:none;
-	background-color:#eee;
+	background-color:#000;
 }
 
 .nav>li.disabled>a {
@@ -1993,7 +1993,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 
 .nav-pills>li>a:focus,.nav-pills>li>a:hover {
 	text-decoration:none;
-	background-color:#222
+	background-color:#ddd;
 }
 
 .nav-stacked>li {
