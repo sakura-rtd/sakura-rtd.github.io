@@ -3792,7 +3792,9 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	margin:1em 0;
 	text-align:center;
 	overflow:hidden;
-	padding:10px 0
+}
+#blog-pager span{
+	width:33%
 }
 
 #sidebar {
