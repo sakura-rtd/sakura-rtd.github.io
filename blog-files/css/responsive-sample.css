@@ -1161,7 +1161,12 @@ button,input,select,textarea {
 
 a {
 	color:#0088cc;
-	text-decoration:none
+	text-decoration:none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
 }
 
 a:focus,a:hover {
@@ -1841,6 +1846,11 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	padding:10px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
 }
 .nav>li>a:focus,.nav>li>a:hover {
 	text-decoration:none;
