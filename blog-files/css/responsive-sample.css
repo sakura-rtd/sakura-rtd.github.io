@@ -2232,7 +2232,6 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 
 @media (min-width:768px) {
 	.navbar>.container .navbar-brand {
-		
 	margin-left:-15px
 	}
 
@@ -2480,7 +2479,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 }
 
 .navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover {
-	color:#eee
+	color:#777
 }
 
 .navbar-default .navbar-text {
