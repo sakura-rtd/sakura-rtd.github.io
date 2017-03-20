@@ -182,8 +182,9 @@ body p {
 	color:#888;
 	font-size:14px
 }
-#header .icon {
-	font-size:18px;
+.icon {
+	height: 18px;
+	width: auto;
 }
 .header {
 	margin:35px 0
