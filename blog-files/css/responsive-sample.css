@@ -2658,13 +2658,32 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	height: 4px;
 	background-color: #ddd;
 }
+.navbar-baseline span {
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
 .navbar-baseline span:nth-child(1) {
 	width:50px;
-	background-color: #000;	
+	background-color: #3d99ff;	
 }
 .navbar-baseline span:nth-child(2) {
 	width:50px;
-	background-color: #fff;	
+	background-color: #ffdd00;	
+}
+.navbar-baseline span:nth-child(3) {
+	width:50px;
+	background-color: #ff7766;	
+}
+.navbar-baseline span:nth-child(4) {
+	width:50px;
+	background-color: #4dd065;	
+}
+.navbar-baseline span:nth-child(5) {
+	width:50px;
+	background-color: #7ad4ff;	
+}
+.navbar-baseline span:nth-child(6) {
 }
 
 .container,.container-fluid {
