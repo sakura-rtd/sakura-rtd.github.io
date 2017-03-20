@@ -2658,6 +2658,14 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	height: 4px;
 	background-color: #ddd;
 }
+.navbar-baseline span:nth-child(1) {
+	width:50px;
+	background-color: #000;	
+}
+.navbar-baseline span:nth-child(2) {
+	width:50px;
+	background-color: #fff;	
+}
 
 .container,.container-fluid {
 	margin-right:auto;
