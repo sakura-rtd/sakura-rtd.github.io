@@ -2655,7 +2655,8 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 
 .navbar-baseline {
 	width:100%;
-	height:3px;
+	height: 4px;
+	background-color: #ddd;
 }
 
 .container,.container-fluid {
