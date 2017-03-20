@@ -2403,7 +2403,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 		
 	width:auto;
 		border:0;
-		margin-left:0;
+		margin-left:10px;
 		margin-right:0;
 		padding-top:0;
 		padding-bottom:0;
