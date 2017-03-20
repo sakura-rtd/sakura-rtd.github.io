@@ -414,12 +414,12 @@ border-bottom: #ddd 1px solid;
 }
 
 .sidebar #PageList1 {
-	border-radius: 20px;
-	border: 5px solid #b6cef9;
+	border-radius: 10px;
+	background-color: #08C;
 }
 
 .sidebar #PageList1 .widget-content {
-	padding:8px 15px;
+	padding: 4px 15px;
 }
 
 .sidebar #PageList1 ul li {
@@ -437,6 +437,7 @@ border-bottom: #ddd 1px solid;
 .sidebar #PageList1 ul li a {
 	font-size: 14px;
 	font-weight: normal;
+	color: #fff;
 }
 
 .sidebar .cloud-label-widget-content {
