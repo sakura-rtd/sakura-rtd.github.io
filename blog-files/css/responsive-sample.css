@@ -2654,11 +2654,12 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 }
 
 .navbar-baseline {
-	height: 4px;
 	background-color: #ddd;
+	font-size: 3px;
 }
 .navbar-baseline .line-header {
 	height: 4px;
+	margin-left: -16px;
 }
 
 .container,.container-fluid {
