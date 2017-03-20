@@ -86,46 +86,36 @@ blockquote:after,blockquote:before,q:after,q:before {
 	content:'';
 	content:none
 }
-
 :focus {
 	outline:0
 }
-
 ins {
 	text-decoration:none
 }
-
 del {
 	text-decoration:line-through
 }
-
 td,th {
 	padding:5px
 }
-
 .body-fauxcolumn-outer,body {
 /*	background:#e9eaed;
 	font:400 12px 'Open Sans',Trebuchet MS,Sans-serif;
 	color:#666 */
 }
-
 body p {
 	padding-top:1em;
 	line-height:2em
 }
-
 #container {
 	margin:0 auto;
 	color:#444;
 	font-size:14px;
 	font-weight:400
 }
-
 #main {
 	padding: 0px 5% 0 0;
 }
-
-
 #content {
 	width:712px;
 	padding:20px 0 10px;
@@ -133,13 +123,11 @@ body p {
 	display:inline;
 	margin-top:-10px
 }
-
 #content-wide {
 	clear:both;
 	width:1060px;
 	padding:10px 0
 }
-
 #aside {
 	display:inline;
 	float:right;
@@ -147,7 +135,6 @@ body p {
 	color:#ccc;
 	padding:10px 0
 }
-
 #footer {
 	clear:both;
 	overflow:hidden;
@@ -161,7 +148,6 @@ body p {
 	-moz-border-radius:5px;
 	border-radius:5px
 }
-
 #main-top-nav {
 	margin:0 0 -1px 0;
 	padding:0;
@@ -171,7 +157,6 @@ body p {
 	z-index:999;
 	background-color:#fa3d03
 }
-
 #header-wrapper {
 	min-height:90px
 }
@@ -182,25 +167,24 @@ body p {
 #header {
 	margin-top:-15px
 }
-
 #header h1 {
 	color:#666;
 	text-shadow:2px 2px 2px #FFF;
 	letter-spacing:-2px
 }
-
 #header a,#header a:hover {
 	text-decoration:none;
 	color:#666
 }
-
 #header .description {
 	margin:-3px 5px 5px;
 	line-height:1.4em;
 	color:#888;
 	font-size:14px
 }
-
+#header .icon {
+	font-size:18px;
+}
 .header {
 	margin:35px 0
 }
@@ -257,22 +241,18 @@ border-bottom: #ddd 1px solid;
 	color:#666;
 	text-decoration:none
 }
-
 .post p {
 	margin-bottom: 2em;
 }
-
 .post .linkurl {
 	font-weight: 500;
 	display: block;
 }
-
 .post .linkurl:before {
 	font-family: 'FontAwesome';
 	content: "\f0a9";
 	margin-right:0.25em;
 }
-
 .post ul.post-meta {
 	color:#6b6969;
 	clear:both;
@@ -284,7 +264,6 @@ border-bottom: #ddd 1px solid;
 	padding:5px 0;
 	list-style:none
 }
-
 .post ul.post-meta li {
 	padding-right:20px;
 	float:left
