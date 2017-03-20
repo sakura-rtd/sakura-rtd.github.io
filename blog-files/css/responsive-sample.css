@@ -414,12 +414,12 @@ border-bottom: #ddd 1px solid;
 }
 
 .sidebar #PageList1 {
-	border-radius: 10px;
-	border: 4px solid #bbb
+	border-radius: 20px;
+	border: 4px solid #ddd;
 }
 
 .sidebar #PageList1 .widget-content {
-	padding: 4px 15px;
+	padding: 5px 15px;
 }
 
 .sidebar #PageList1 ul li {
