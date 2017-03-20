@@ -2657,6 +2657,9 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	height: 4px;
 	background-color: #ddd;
 }
+.navbar-baseline .line-header {
+	height: 4px;
+}
 
 .container,.container-fluid {
 	margin-right:auto;
