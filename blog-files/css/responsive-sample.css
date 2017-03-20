@@ -2493,7 +2493,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 }
 
 .navbar-default .navbar-toggle {
-	border-color:#ddd
+	display: none;
 }
 
 .navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover {
