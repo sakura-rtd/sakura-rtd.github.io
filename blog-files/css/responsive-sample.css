@@ -184,7 +184,9 @@ body p {
 }
 .icon {
 	height: 18px;
-	width: auto;
+	width: 18px;
+	display: inline;
+
 }
 .header {
 	margin:35px 0
@@ -1833,14 +1835,18 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	margin:0;
 }
 
-.nav>li>a {
+.nav>li>a span{
 	position:relative;
 	display:block;
 	padding:15px;
+}
+.nav>li>a svg{
+	position:relative;
+	display:block;
+	padding:15px 10px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20px;
 }
-
 .nav>li>a:focus,.nav>li>a:hover {
 	text-decoration:none;
 	background-color:#000;
