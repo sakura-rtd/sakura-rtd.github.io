@@ -2654,6 +2654,11 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	color:#fff
 }
 
+navbar-baseline {
+	width:100%;
+	height:3px;
+}
+
 .container,.container-fluid {
 	margin-right:auto;
 	margin-left:auto;
