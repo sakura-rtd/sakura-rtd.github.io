@@ -865,11 +865,11 @@ p.footer-link {
 .form-main-search {
 	padding-right:30px
 }
-
+/*
 .collapse {
 	display:none
 }
-
+*/
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
 	display:block
 }
