@@ -437,7 +437,7 @@ border-bottom: #ddd 1px solid;
 
 .sidebar #PageList1 {
 	border-radius: 20px;
-	border: 4px solid #ddd;
+	background-color: #bbbbbb;
 }
 
 .sidebar #PageList1 .widget-content {
@@ -836,8 +836,7 @@ p.footer-link {
 
 .jqmaintitle {
 	margin:0;
-	font-size:15px;
-	/* padding:20px 0 10px 20px; */
+	font-size:14px;
 }
 
 .jqmaintitle:before {
@@ -1168,7 +1167,7 @@ html {
 }
 
 body {
-	font-family:'Noto Sans Japanese',sans-serif;
+	font-family:"メイリオ","Meiryo","ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Helvetica Neue","Helvetica","Arial","Apple TP",sans-serif;
 	font-size:14px;
 	line-height:1.428571429;
 	color:#444;
