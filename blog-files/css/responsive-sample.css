@@ -1,3 +1,25 @@
+/*
+-----------------------------------------------
+Blogger Template Style
+-----------------------------------------------
+Name           : Weblogtemplates
+Author         : Weblogtemplates
+Author  URL    : http://www.weblogtemplates.net/
+Date           : March, 2014
+-----------------------------------------------
+License:
+This free Blogger template is licensed under the Creative Commons Attribution 3.0 License, which permits both personal and commercial use.
+However, to satisfy the 'attribution' clause of the license, you are required to keep the footer links intact which provides due credit to its authors. For more specific details about the license, you may visit the URL below:
+http://creativecommons.org/licenses/by/3.0/
+----------------------------------------------- */
+
+/*
+-----------------------------------------------
+Customized by sakura
+https://twitter.com/sakura_rtd
+http://rt3dcg.blogspot.jp/
+----------------------------------------------- */
+
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 #navbar-iframe {
@@ -3921,6 +3943,7 @@ ul.nav li.dropdown:hover>ul.dropdown-menu {
 }
 
 .post-header-label {
+	display: none;
 	color:#888;
 	font-size:12px;
 	border:0;
