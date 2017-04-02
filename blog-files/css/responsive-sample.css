@@ -54,7 +54,6 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,
 	padding:0;
 	border:0;
 	outline:0;
-	font-size:100%;
 	vertical-align:baseline;
 	background:0 0
 }
@@ -384,7 +383,7 @@ border-bottom: #ddd 1px solid;
 }
 
 .sidebar h2 {
-	font-size:15px;
+	font-size:100%;
 	margin-top:0;
 	color: #aaa;
 }
@@ -3798,12 +3797,16 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	color:#ddd
 }
 
-.btn-gray, #PageList1 {
+.btn-gray, #sidebar .list-label-widget-content ul li a, #sidebar .list-label-widget-content ul li span {
 	background: #bbb;
 	border-radius: 2em;
 	color: #fff !important;
 	padding: 0px 10px;
 	line-height: 2em;
+}
+
+#sidebar .list-label-widget-content ul li a, #sidebar .list-label-widget-content ul li span {
+	float: left;
 }
 
 .btn-email {
@@ -3848,7 +3851,7 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	background-color:#333!important;
 }
 
-#sidebar .list-label-widget-content ul li a:hover {
+.btn-gray:hover, #sidebar .list-label-widget-content ul li a:hover {
 	color:#333!important
 }
 
