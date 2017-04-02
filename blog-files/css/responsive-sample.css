@@ -269,11 +269,11 @@ border-bottom: #ddd 1px solid;
 .post p {
 	margin-bottom: 2em;
 }
-.post .linkurl {
+.linkurl {
 	font-weight: 500;
 	display: block;
 }
-.post .linkurl:before {
+.linkurl:before {
 	font-family: 'FontAwesome';
 	content: "\f0a9";
 	margin-right:0.25em;
@@ -3798,10 +3798,12 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 	color:#ddd
 }
 
-.btn-gray {
-background: #bbb;
-border-radius: 16px;
-color: #fff !important;
+.btn-gray, #PageList1 {
+	background: #bbb;
+	border-radius: 2em;
+	color: #fff !important;
+	padding: 0px 10px;
+	line-height: 2em;
 }
 
 .btn-email {
