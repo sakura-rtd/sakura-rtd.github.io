@@ -436,8 +436,9 @@ border-bottom: #ddd 1px solid;
 }
 
 .sidebar #PageList1 {
-	border-radius: 20px;
+	/* border-radius: 20px; */
 	background-color: #bbbbbb;
+	.border-radius();
 }
 
 .sidebar #PageList1 .widget-content {
@@ -3795,6 +3796,12 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 
 .btn-danger:hover {
 	color:#ddd
+}
+
+.btn-gray {
+background: #bbb;
+border-radius: 16px;
+color: #fff !important;
 }
 
 .btn-email {
