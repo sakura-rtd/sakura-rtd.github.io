@@ -384,9 +384,10 @@ border-bottom: #ddd 1px solid;
 }
 
 .sidebar h2 {
-	font-size:100%;
+	font-size:130%;
 	margin-top:0;
 	color: #aaa;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .sidebar h2:before {
@@ -423,6 +424,7 @@ border-bottom: #ddd 1px solid;
 }
 
 .sidebar ul li {
+	/* 
 	height:100%;
 	line-height:22px;
 	clear:left;
@@ -430,9 +432,10 @@ border-bottom: #ddd 1px solid;
 	overflow:hidden;
 	color:gray;
 	text-decoration:none;
-	padding:0 0 0 10px;
 	display:block;
-	border-bottom:1px solid #f9f9f9
+	border-bottom:1px solid #f9f9f9;
+	*/
+	padding: 0 0 0 1em !important;
 }
 
 .sidebar #PageList1 {
