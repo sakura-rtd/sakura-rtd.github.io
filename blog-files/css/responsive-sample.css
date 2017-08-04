@@ -348,6 +348,10 @@ border-bottom: #ddd 1px solid;
 	margin-right:0.25em;
 }
 
+
+.post ul.check li {
+	color:#888
+}
 .post ul.check li:before {
 	font-family: 'FontAwesome';
 	content: "\f046";
