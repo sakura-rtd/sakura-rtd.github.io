@@ -348,6 +348,12 @@ border-bottom: #ddd 1px solid;
 	margin-right:0.25em;
 }
 
+.check:before {
+	font-family: 'FontAwesome';
+	content: "\f046";
+	margin-right:0.25em;
+}
+
 .post blockquote {
 	display:block;
 	margin:2em;
