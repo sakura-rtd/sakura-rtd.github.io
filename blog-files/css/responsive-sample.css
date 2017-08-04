@@ -1301,7 +1301,7 @@ hr {
 }
 
 h1,h2,h3 {
-	margin-top:20px;
+	margin-top:60px;
 	margin-bottom:10px
 }
 
@@ -1327,7 +1327,7 @@ h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small {
 }
 
 .h3,h3 {
-	font-size:140%
+	font-size:150%
 }
 
 .h4,h4 {
