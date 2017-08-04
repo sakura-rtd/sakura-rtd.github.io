@@ -272,6 +272,7 @@ border-bottom: #ddd 1px solid;
 	text-decoration:none
 }
 .post p {
+	margin-top: 2em;
 	margin-bottom: 2em;
 }
 .linkurl {
@@ -377,7 +378,7 @@ border-bottom: #ddd 1px solid;
 } */
 
 .post img {
-	margin: 0.5em 0 2em 0;
+	margin: 3em 0;
 	display: block;
 	max-width: 100%;
 	border: 1px #eee solid;
@@ -1199,7 +1200,7 @@ html {
 
 body {
 	font-family:"メイリオ","Meiryo","ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Helvetica Neue","Helvetica","Arial","Apple TP",sans-serif;
-	font-size:14px;
+	font-size:16px;
 	line-height:1.428571429;
 	color:#444;
 	background-color:#fff
