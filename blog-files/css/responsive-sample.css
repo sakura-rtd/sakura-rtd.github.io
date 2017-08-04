@@ -335,6 +335,13 @@ border-bottom: #ddd 1px solid;
 	content: "\f054";
 	margin-right:0.25em;
 }
+
+.overview:before {
+	font-family: 'FontAwesome';
+	content: "\f0ca";
+	margin-right:0.25em;
+}
+
 .post h4:before {
 	font-family: 'FontAwesome';
 	content: "\f138";
