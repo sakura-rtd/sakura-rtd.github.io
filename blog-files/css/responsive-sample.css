@@ -330,9 +330,14 @@ border-bottom: #ddd 1px solid;
 	padding-top: 1em;
 }
 
-.post h3:before,.post h4:before {
+.post h3:before {
 	font-family: 'FontAwesome';
 	content: "\f054";
+	margin-right:0.25em;
+}
+.post h4:before {
+	font-family: 'FontAwesome';
+	content: "\f138";
 	margin-right:0.25em;
 }
 
