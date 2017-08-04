@@ -338,7 +338,7 @@ border-bottom: #ddd 1px solid;
 
 .post h3.overview:before {
 	font-family: 'FontAwesome';
-	content: "\f0ca";
+	content: "\f03a";
 	margin-right:0.25em;
 }
 
@@ -887,7 +887,7 @@ p.footer-link {
 
 .post ul li {
 	margin-left:20px;
-	list-style:initial
+	list-style: none;
 }
 
 .img-post-thumb {
