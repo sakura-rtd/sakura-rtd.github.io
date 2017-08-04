@@ -336,7 +336,7 @@ border-bottom: #ddd 1px solid;
 	margin-right:0.25em;
 }
 
-h3.overview:before {
+.post h3.overview:before {
 	font-family: 'FontAwesome';
 	content: "\f0ca";
 	margin-right:0.25em;
@@ -348,7 +348,7 @@ h3.overview:before {
 	margin-right:0.25em;
 }
 
-ul.check li:before {
+.post ul.check li:before {
 	font-family: 'FontAwesome';
 	content: "\f046";
 	margin-right:0.25em;
