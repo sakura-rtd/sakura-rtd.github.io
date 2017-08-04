@@ -96,12 +96,16 @@ ol {
 	margin:0;
 }
 
+.post ol {
+	margin: 2em 0;
+}
+
 ol li::before {
 	counter-increment: ol-counter;
 	content: counter(ol-counter);
 	color: #888;
 	font-weight: bold;
-	margin-right: 0.25em;
+	margin-right: 0.5em;
 }
 
 blockquote,q {
