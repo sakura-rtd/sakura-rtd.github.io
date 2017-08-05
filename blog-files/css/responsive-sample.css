@@ -1737,6 +1737,9 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover {
 .homapge-thumb .thumbx img {
 	margin: 0;
 }
+.thumbx img {
+	margin: 0.5em 0;
+}
 
 .caret {
 	display:inline-block;
