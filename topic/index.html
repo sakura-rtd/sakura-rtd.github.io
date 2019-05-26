@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>お題 Topic</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"> 
+  <style>
+.btn-secondary {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  font-size: 24px;
+}
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #666;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+h2, p {
+ margin-top: 1rem;
+}
+a {
+ min-width:250px;
+}
+.fas {
+ margin-right: 0.25rem;
+}
+</style>
+</head>
+<body class="align-items-center">
+  <div class="d-flex p-3 mx-auto flex-column align-items-center">
+  <h1>お題 Topic</h1>
+      <h2  id="ja"></h2>
+      <h2 id="en"></h2>
+      <p>
+        <i class="fas fa-arrow-circle-up"></i>Click to Google images
+      </p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+</body>
+<script type="text/javascript">
+function getCSV(){
+var req = new XMLHttpRequest();
+req.open("get", "topic.csv", true);
+req.send(null);
+req.onload = function(){
+render_text(req.responseText);
+}
+}
+function render_text(str){
+var result = [];
+var tmp = str.split("\n");
+var random = Math.floor( Math.random() * (tmp.length-1));
+result = tmp[random].split(',');
+var q_ja = document.getElementById("ja");
+var q_en = document.getElementById("en");
+q_ja.innerHTML = '<a href="https://www.google.com/search?q=' + result[0] + '&tbm=isch" class="btn btn-secondary" >' + result[0] + '</a>';
+q_en.innerHTML = '<a href="https://www.google.com/search?q=' + result[1] + '&tbm=isch" class="btn btn-secondary" >' + result[1] + '</a>';
+}
+getCSV();
+</script>
+</html>
