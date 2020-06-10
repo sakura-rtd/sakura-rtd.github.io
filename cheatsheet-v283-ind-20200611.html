@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blender基本操作ショートカット</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="sakura">
+
+  <!-- Le styles -->
+  <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" rel="stylesheet">
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'/>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+  <link href="http://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <style type="text/css">
+    body {
+      width: 1360px;
+      padding-left: 08px;
+      padding-top: 10px;
+      background-color:#fff;
+      color: #0e5f4e;
+      font-family: "Hiragino Maru Gothic ProN" , "Open Sans", "BIZ UDPゴシック", sans-serif;
+      font-size:12px;
+      font-weight: 400;
+      line-height: 2em;
+      -webkit-user-select:none;
+    }
+    .sidebar-nav {
+      padding: 0px 0;
+    }
+    h4 {
+      font-size: 17px;
+    }
+    h6 {
+      font-size: 13px;
+    }
+    .label {
+      margin: 0px 0px;
+      padding: 0px 4px;
+      font-family: "Cantarell", sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0px;
+      line-height: 1.3em;
+    }
+    .memo {
+      font-size: 11px;
+      letter-spacing: 0px;
+      color: #927945;
+    }
+    .star {
+      color: #679cff;
+      font-size: 10px;
+    }
+    .heart {
+      display: none;
+      color: #ff88a4;
+      font-size: 10px;
+    }
+    .table {
+      margin-bottom: 5px;
+    }
+    th {
+      background: #d1ea97;
+      /** color: #fff; **/
+      font-size: 12px;
+      line-height: 1.1em !important;
+    }
+  /** td {
+  line-height: 1.2em !important;
+}
+**/
+td:nth-child(2) {
+  background:#f0f0f0;
+}
+tr:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+
+.break {
+  line-height: 1.7 !important;
+}
+
+.label-primary {
+  background: #fff;
+  border: 1px #3e938a solid;
+  color: #3e938a;
+  /** background: #3e938a;
+  color: #fff; **/
+}
+.label-num {
+  background: #3e938a;
+  color: #fff;
+}
+.danger {
+  background: #fff4c9 !important;
+}
+.success {
+  background: #dee7ff  !important;
+}
+
+/*
+.axis {
+background-color:white  !important;
+border:solid 2px;
+padding: 0 5px;
+font-size: 0.9em
+}
+.axis-x {
+color:#ff5757;
+border-color:#ff5757;
+}
+.axis-y {
+color:#378437;
+border-color:#378437;
+}
+.axis-z {
+color:#1c6fd5;
+border-color:#1c6fd5;
+}
+*/
+
+.axis-x {
+  background-color:#ff5757  !important;
+}
+.axis-y {
+  background-color:#3eb445 !important;
+}
+.axis-z {
+  background-color:#457eff !important
+}
+
+.boxbottom {
+}
+.box-bottom1 {
+  margin-top: 24px;
+  margin-left: 10px;
+}
+.box-bottom2 {
+  margin-top: 10px;
+}
+
+/**
+@media print {
+// 印刷したくない領域
+.hidden-print {
+display: none;
+}
+// 印刷したい領域
+.content-print{
+top:0 !IMPORTANT;
+left:0 !IMPORTANT;
+width:172mm !IMPORTANT;
+height:251mm !IMPORTANT;
+}
+**/
+}
+</style>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+  $(function() {
+    $( "#dialog-modal" ).dialog({
+      height: 140,
+      modal: true
+    });
+  });
+</script>
+</head>
+
+<body>
+
+  <div class="container-fluid content-print">
+    <div class="row row-fluid">
+
+      <div class="col-xs-4">
+        <h4>Blender基本操作ショートカット(v2.83業界互換版)</h4>
+      </div>
+
+      <div class="col-xs-5">
+        <table class="table table-condensed" style="margin:10px 0;">
+          <tbody>
+            <tr>
+              <td style="background:#eee;">両モード共通</td>
+              <td class="success">オブジェクトモード</td>
+              <td class="danger">編集モード</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-xs-3" style="text-align:right;">
+        <h6>2020-06-11版 ［転載・プリント配布OK］<br />
+          @sakura_rtd　rt3dcg.blogspot.com</h6>
+        </div>
+
+      </div>
+
+      <div class="row row-fluid">
+
+        <div class="col-xs-3">
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">システム</td></tr>
+              <tr><td>新規ファイル作成</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">N</span></td></tr>
+              <tr><td>ファイルを開く</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">O</span></td></tr>
+              <tr><td>セーブ</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">S</span></td></tr>
+              <tr><td>Blenderを終了</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">Q</span></td></tr>
+              <tr><td>取り消し</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">Z</span></td></tr>
+              <tr><td>やり直し</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">Shift</span>+<span class="label label-primary">Z</span></td></tr>
+              <tr><td>操作履歴</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">Alt</span>+<span class="label label-primary">Z</span></td></tr>
+            </tbody>
+          </table>
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">マウス操作</td></tr>
+
+              <tr><td>視点平行移動</td><td><span class="label label-primary">Alt</span>+中ドラッグ</td></tr>
+              <tr><td>視点回転</td><td><span class="label label-primary">Alt</span>+左ドラッグ</td></tr>
+              <tr><td>ズーム</td><td>ホイール or <br /><span class="label label-primary">Alt</span>+右ドラッグ</td></tr>
+              <tr><td>選択</td><td>左クリック<span class="memo">　(ツール切替は<span class="label label-primary">Q</span>)</span></td></tr>
+              <tr><td>移動</td><td>左ドラッグ<span class="memo">　選択ツール使用中</span></td></tr>
+              <tr><td>3Dカーソル位置</td><td><span class="label label-primary">C</span>+左クリック</td></tr>
+            </tbody>
+          </table>
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">視点切替　<span class="memo">Ctrl+F1～F3キーで反転視点</span></td></tr>
+              <tr><td>フロント視点</td><td><span class="label label-primary">F1</span></td></tr>
+              <tr><td>右サイド視点</td><td><span class="label label-primary">F2</span></td></tr>
+              <tr><td>トップ視点</td><td><span class="label label-primary">F3</span></td></tr>
+              <tr><td>カメラ視点</td><td><span class="label label-primary">F4</span></td></tr>
+              <tr><td>現在の視点を反転</td><td><span class="label label-primary">F5</span></td></tr>
+              <tr><td>透視投影/平行投影の切替</td><td><span class="memo">【ビュー】メニューから</span></td></tr>
+              <tr><td>ズームイン/アウト</td><td>Num<span class="label label-num">＋</span> / Num<span class="label label-num">－</span></td></tr>
+              <tr><td>矩形選択でズームイン</td><td><span class="label label-primary">Z</span>→左ドラッグ</td></tr>
+              <tr><td>矩形選択でズームアウト</td><td><span class="label label-primary">Z</span>→中ドラッグ</td></tr>
+              <tr><td>選択オブジェクトのみを<br />ズーム表示/解除</td><td><span class="label label-primary">Shift</span>+<span class="label label-primary">I</span></td></tr>
+              <tr><td>選択部分を中心にズーム</td><td><span class="label label-primary">F</span></td></tr>
+              <tr><td>可視オブジェクトを<br />画面内に納める</td><td><span class="label label-primary">A</span></td></tr>
+
+
+            </tbody>
+          </table>
+
+        </div><!--/span-->
+
+        <div class="col-xs-3">
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">エディタ操作</td></tr>
+              <tr><td>サイドバー表示切替<span class="memo">　ビューポート右側</span></td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">]</span></td></tr>
+              <tr><td>ツールバー表示切替<span class="memo">　ビューポート左側</span></td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">[</span></td></tr>
+            </tbody>
+          </table>
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">モード変更　<span class="memo">テンキーではない方</span></td></tr>
+
+              <tr><td>編集モード<br />（頂点選択/辺選択/面選択）</td><td><span class="label label-primary">1</span> / <span class="label label-primary">2</span> / <span class="label label-primary">3</span><span class="memo"><br />Shiftキーで複数選択可</span></td></tr>
+              <tr><td>オブジェクトモード</td><td><span class="label label-primary">4</span></td></tr>
+              <tr><td>スカルプトモード</td><td><span class="label label-primary">5</span></td></tr>
+              <tr><td>頂点ペイントモード</td><td><span class="label label-primary">6</span></td></tr>
+              <tr><td>ウェイトペイントモード</td><td><span class="label label-primary">7</span></td></tr>
+              <tr><td>テクスチャペイントモード</td><td><span class="label label-primary">8</span></td></tr>
+            </tbody>
+          </table>
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">作成</td></tr>
+              <tr><td>メッシュなどを追加<br /><span class="memo">平面/立方体/UV球/カーブ/<br />/エンプティ/ライトなど</span></td><td><span class="memo">【追加】メニューから</span></td></tr>
+            </tbody>
+          </table>
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">選択</td></tr>
+
+              <tr><td>選択</td><td>左クリック<span class="memo">　(ツール切替は<span class="label label-primary">Q</span>)</td></tr>
+              <tr><td>ボックス選択<br />円形ブラシ選択<br />なげなわ選択</td><td>左ドラッグ<span class="memo">　(ツール切替は</span><span class="label label-primary">Q</span>）</span></tr>
+              <tr><td>全選択</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">A</span></td></tr>
+              <tr><td>選択解除</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">Shift</span>+<span class="label label-primary">A</span> or<br />空きスペースで左クリック</td></tr>
+              <tr><td>選択範囲を反転</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">I</span></td></tr>
+              <tr><td>リンク選択</td><td><span class="label label-primary">]</span><br /><span class="memo">オブジェクトモード→現在の選択部分<br />と共通要素があるオブジェクトを選択。<br />編集モード→現在の選択部分と<br />つながっている部分を選択</span></td></tr>
+              <tr><td>親を選択</td><td class="success"><span class="label label-primary">[</span> or <span class="label label-primary">Shift</span>+<span class="label label-primary">[</span></td></tr>
+              <tr><td>子を選択</td><td class="success"><span class="label label-primary">Shift</span>+<span class="label label-primary">]</span></td></tr>
+              <tr><td>ループ選択</td><td class="danger">左ダブルクリック</td></tr>
+              <tr><td>選択範囲を<br />広げる/狭める</td><td class="danger"><span class="label label-primary">↑</span> / <span class="label label-primary">↓</span></td></tr>
+            </tbody>
+          </table>
+
+        </div><!--/span-->
+
+        <div class="col-xs-3">
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">基本の変形操作</td></tr>
+              <tr><td>移動</td><td>左ドラッグ or<br /><span class="label label-primary">W</span>→中ドラッグ or ギズモ左ドラッグ</td></tr>
+              <tr><td>回転</td><td><span class="label label-primary">E</span>→中ドラッグ or ギズモ左ドラッグ</td></tr>
+              <tr><td>拡大縮小</td><td><span class="label label-primary">R</span>→中ドラッグ or ギズモ左ドラッグ</td></tr>
+              <tr><td>削除</td><td><span class="label label-primary">Delete</span> or <span class="label label-primary">Back Space</span></td></tr>
+              <tr><td>複製</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">D</span></td></tr>
+            </tbody>
+          </table>
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">変形ドラッグ中の操作切替</td></tr>
+              <tr><td>移動</td><td><span class="label label-primary">G</td></tr>
+              <tr><td>回転</td><td><span class="label label-primary">R</span></td></tr>
+              <tr><td>拡大縮小</td><td><span class="label label-primary">S</span></td></tr>
+            </tbody>
+          </table>
+
+
+          <table class="table table-condensed">
+            <tbody>
+              <tr><th colspan="2">コンテクストメニューを表示</td></tr>
+              <tr><td>オブジェクトモードのメニュー<span class="heart">◆</span><br /><span class="memo">シェーディングの切替/原点変更/<br />複製・リンク/スナップなど</span><br /><br />
+                編集モードのメニュー<span class="heart">◆</span><br /><span class="memo">頂点/辺/面の選択モードに応じて表示</span></td><td>右クリック</td></tr>
+              </tbody>
+            </table>
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr><th colspan="2">メッシュなどの編集</td></tr>
+                <tr><td>押し出し</td><td class="danger"><span class="label label-primary">Ctrl</span>+<span class="label label-primary">E</span></td></tr>
+                <tr><td>インセット<span class="memo">　面を内側に押し出す</span></td><td class="danger"><span class="label label-primary">I</span></td></tr>
+                <tr><td>ループカット</td><td class="danger"><span class="label label-primary">Alt</span>+<span class="label label-primary">C</span></td></tr>
+                <tr><td>ベベル<span class="memo">　面取り</span></td><td class="danger"><span class="label label-primary">Ctrl</span>+<span class="label label-primary">B</span></td></tr>
+                <tr><td>ナイフツール</td><td class="danger"><span class="label label-primary">K</span></td></tr>
+                <tr><td>プロポーショナル編集をON/OFF</td><td><span class="label label-primary">B</span></td></tr>
+              </tbody>
+            </table>
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr><th colspan="2">親子関係</td></tr>
+                <tr><td>複数オブジェクトを親子化</td><td class="success"><span class="label label-primary">P</span></td></tr>
+                <tr><td>親子関係を解除</td><td class="success"><span class="label label-primary">Shift</span>+<span class="label label-primary">P</span></td></tr>
+              </tbody>
+            </table>
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr><th colspan="2">表示/非表示</td></tr>
+                <tr><td>選択部分を隠す</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">H</span></td></tr>
+                <tr><td>選択部分以外を隠す</td><td><span class="label label-primary">Shift</span>+<span class="label label-primary">H</span></td></tr>
+                <tr><td>隠した部分を再表示</td><td><span class="label label-primary">Alt</span>+<span class="label label-primary">H</span></td></tr>
+              </tbody>
+            </table>
+
+          </div><!--/span-->
+
+          <div class="col-xs-3">
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr><th colspan="2">コレクション</td></tr>
+                <tr><td>選択オブジェクトを<br />コレクションに移動</td><td class="success"><span class="label label-primary">Ctrl</span>+<span class="label label-primary">G</span></td></tr>
+                <tr><td>選択オブジェクトを<br />コレクションにリンク</td><td class="success"><span class="label label-primary">Ctrl</span>+<span class="label label-primary">Shift</span>+<span class="label label-primary">G</span></td></tr>
+              </tbody>
+            </table>
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr><th colspan="2">原点・座標などの操作</td></tr>
+                <tr><td>視点のパイメニュー<span class="memo"></td><td><span class="label label-primary">V</span></td></tr>
+                <tr><td>スナップのパイメニュー<span class="memo"><br />3Dカーソル/選択アイテム位置変更</span></td><td><span class="label label-primary">Shift</span>+<span class="label label-primary">X</span></td></tr>
+                <tr><td>座標系のパイメニュー<span class="memo"><br />グローバル/ローカル/ビューなど</span></td><td><span class="label label-primary">,</span><span class="memo"> カンマ</span></td></tr>
+                <tr><td>ピボットポイントのパイメニュー<br /><span class="memo">拡大縮小などの基準点を設定</span></td><td><span class="label label-primary">.</span><span class="memo"> ピリオド</span></td></tr>
+                <!-- <tr><td>オブジェクトモードでの移動・<br />変形をデータに適用</td><td class="success">Ctrl</span>+<span class="label label-primary">A</span></td></tr> -->
+                <tr><td>オブジェクトの<br />移動/回転/拡縮をリセット</td><td class="success">Alt</span>+<span class="label label-primary">W</span>/<span class="label label-primary">E</span>/<span class="label label-primary">R</span></td></tr>
+              </tbody>
+            </table>
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr><th colspan="2">表示・レンダリング</td></tr>
+                <tr><td>レンダリング</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">Enter</span></td></tr>
+                <tr><td>アニメーションを<br />レンダリング</td><td><span class="label label-primary">Ctrl</span>+<span class="label label-primary">Alt</span>+<span class="label label-primary">Enter</span></td></tr>
+                <tr><td>レンダリング中止</td><td><span class="label label-primary">Esc</span></td></tr>
+              </tbody>
+            </table>
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr><th colspan="2">アニメーション</td></tr>
+                <tr><td>アニメーションを再生/停止</td><td><span class="label label-primary">Space</span><span class="memo"></td></tr>
+                <tr><td>キーフレーム挿入</td class="success"><td class="success"><span class="label label-primary">S</span></td></tr>
+                <tr><td>キーフレーム挿入メニュー</td class="success"><td class="success"><span class="label label-primary">Shift</span>+<span class="label label-primary">S</span></td></tr>
+                <tr><td>キーフレーム挿入<br />（位置/回転/拡縮）</td><td class="success"><span class="label label-primary">Shift</span>+<span class="label label-primary">W</span>/<span class="label label-primary">E</span>/<span class="label label-primary">R</span></td></tr>
+              </tbody>
+            </table>
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr><th colspan="2">便利</td></tr>
+                <tr><td>お気に入りツール<br /><span class="memo">ユーザー設定を保存すると<br />次回以降の起動でも有効</span></td><td><span class="label label-primary">Shift</span>+<span class="label label-primary">Tab</span><br /><span class="memo">他のメニュー項目上で<br />右クリックして登録。<br />削除も項目上で右クリック</span></td></tr>
+                <tr><td>オブジェクト名を変更</td><td><span class="label label-primary">Enter</span></td></tr>
+                <tr><td>コマンド検索</td><td><span class="label label-primary">Tab</span></span></td></tr>
+                <tr><td>直前の操作を繰り返し</td><td><span class="label label-primary">G</td></tr>
+              </tbody>
+            </table>
+
+
+          </div><!--/span-->
+
+
+        </div><!--/row-->
+
+
+      </div><!--/.fluid-container-->
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+<!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+</body>
+</html>
