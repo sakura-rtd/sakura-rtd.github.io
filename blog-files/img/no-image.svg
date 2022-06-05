@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1600 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="アートボード1" transform="matrix(1.00163,0,0,1.03622,0,0)">
+        <rect x="0" y="0" width="1600" height="900" style="fill:none;"/>
+        <g id="レイヤー1" transform="matrix(0.998373,0,0,0.965044,0,0)">
+            <g transform="matrix(0.998373,0,0,0.965044,0,0)">
+                <rect x="0" y="0" width="1602.61" height="932.6" style="fill:rgb(102,102,102);"/>
+            </g>
+            <g transform="matrix(1.2522,0,0,1.2522,481.315,129.437)">
+                <path d="M447.1,32L63.1,32C28.64,32 -0.009,60.65 -0.009,96L-0.009,416C-0.009,451.35 28.641,480 63.091,480L447.091,480C482.441,480 511.091,451.35 511.091,416L511.091,96C511.1,60.65 483.3,32 447.1,32ZM111.1,96C137.61,96 159.1,117.49 159.1,144C159.1,170.51 138.5,192 111.1,192C83.7,192 63.1,170.51 63.1,144C63.1,117.49 85.48,96 111.1,96ZM446.1,407.6C443.3,412.8 437.9,416 432,416L82.01,416C75.989,416 70.48,412.621 67.75,407.25C65.02,401.883 65.535,395.44 69.084,390.57L139.084,294.57C142.1,290.4 146.9,288 152,288C157.1,288 161.916,290.441 164.93,294.574L197.39,339.084L290.69,199.984C293.7,194.7 298.7,192 304,192C309.3,192 314.35,194.672 317.31,199.125L445.31,391.125C448.6,396 448.9,402.3 446.1,407.6Z" style="fill:rgb(170,170,170);fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>
