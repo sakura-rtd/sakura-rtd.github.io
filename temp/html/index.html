@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blender基本操作ショートカット</title>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'xgh0dri',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/wf-loading/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a▲a!="complete"▲a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:100,300,regular,500,700,800,900" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,regular,500,700,900" rel="stylesheet" />
+<link href="http://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' rel='stylesheet'/>
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Blender基本操作ショートカット v3.2</h1>
+  <section id ="mode-color">
+    <span class="both">両モード共通</span>
+    <span class="object">オブジェクトモード</span>
+    <span class="edit">編集モード</span>
+  </section>
+  <section id ="date">
+    2022-07-02版 ［転載・プリント配布OK］
+  </section>
+  <section id ="caption">
+    <span id="author">@sakura_rtd</span>
+    <span id="site">rt3dcg.blogspot.com</span>
+  </section>
+</header>
+
+<main>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">システム</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">ファイル関連メニュー◆</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">F4</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">新規ファイル作成</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">N</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ファイルを<wbr>開く</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">O</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">セーブ</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">S</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">Blende<wbr>r<wbr>を<wbr>終了</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">Q</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">取り<wbr>消し</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">Z</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">やり<wbr>直し</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">Shift</span>+<span class="key">Z</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">マウス操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">視点平行移動</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+中ドラッグ<i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">視点回転</span></td>
+        <td class="both"><span class="cell"><span class="keyset">中ドラッグ<i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ズーム</span></td>
+        <td class="both"><span class="cell"><span class="keyset">ホイール or<span class="key">Ctrl</span>+中ドラッグ</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">操作の<wbr>確定</span></td>
+        <td class="both"><span class="cell"><span class="keyset">左クリック or<span class="key">Enter</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">操作キャンセル</span></td>
+        <td class="both"><span class="cell"><span class="keyset">右クリック or<span class="key">Esc</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">移動</span></td>
+        <td class="both"><span class="cell"><span class="keyset">左ドラッグ<i class="fa-solid fa-rotate reverse"></i></span><span class="wb memo">選択ツール使用中</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">3Dカーソル位置</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+右クリック<i class="fa-solid fa-wrench pref"></i></span><span class="wb memo">設定で<wbr>右クリック選択に<wbr>している<wbr>場合、<wbr>カーソル位置は<wbr>左クリック</span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">視点切替<span class="memo">Ctrl+数字キーで反転視点など</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">視点切替の<wbr>パイメニュー◆</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">`</span>or<span class="key">@</span><i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">カメラ視点<wbr>/<wbr>解除</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key numpad">0</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">フロント視点</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key numpad">1</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">サイド視点</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key numpad">3</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">トップ視点</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key numpad">7</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">現在の<wbr>視点を<wbr>反転</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key numpad">9</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">視点を<wbr>選択部分と<wbr>平行に<wbr>する</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+<span class="key numpad">7</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">パースの<wbr>ON<wbr>/<wbr>OFF</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key numpad">5</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択オブジェクトのみを<br />ローカル表示<wbr>/<wbr>解除</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key numpad">/</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択部分を<wbr>中心に<wbr>ズーム</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key numpad">.</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">画面操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">クリック位置を<wbr>画面中央に<wbr>する</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Alt</span>+中クリック</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">可視オブジェクトを<wbr>画面内に<wbr>納める</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Home</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">可視オブジェクトを<wbr>画面内に<wbr>納める<wbr>＆3Dカーソルを<wbr>ワールド中心に<wbr>移動</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+<span class="key">C</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">エディタ操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">サイドバー表示<wbr>/<wbr>非表示</span><span class="wb memo">各エディタの<wbr>右側</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">N</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ツールバー表示<wbr>/<wbr>非表示</span><span class="wb memo">各エディタの<wbr>左側</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">T</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">モード変更<span class="memo">設定のTab for Pie Menuでキー交換可</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">モード切替の<wbr>パイメニュー◆</span><span class="wb memo">オブジェクト<wbr>/<wbr>編集<wbr>/<wbr>スカルプト<wbr>/<wbr>ペイント関連モードなど</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">Tab</span><i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">モードの<wbr>トグル切替</span><span class="wb memo">オブジェクトモード⇔編集モードなど</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Tab</span><i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">作成</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">メッシュなどを<wbr>追加</span><span class="wb memo">平面<wbr>/<wbr>立方体<wbr>/<wbr>UV球<wbr>/<wbr>カーブ<wbr>/<br />エンプティ<wbr>/<wbr>ライトなど</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+<span class="key">A</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">選択</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">選択</span></td>
+        <td class="both"><span class="cell"><span class="keyset">左クリック<i class="fa-solid fa-rotate reverse"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">すべてを<wbr>選択</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">A</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択解除</span><span class="wb memo">設定の<wbr>Select <wbr>All <wbr>Toggles<wbr>で<wbr>Aキーの<wbr>トグル操作に<wbr>変更</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Alt</span>+<span class="key">A</span>or<span class="key">A</span><i class="fa-solid fa-arrow-right"></i><span class="key">A</span>or <br />空きスペースで左クリック<i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択ツール切替</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">W</span><i class="fa-solid fa-wrench pref"></i></span><span class="wb memo">設定で<wbr>左クリック選択に<wbr>している<wbr>とき<wbr>有効</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ボックス選択</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">B</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">円形ブラシで<wbr>選択</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">C</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">なげなわ<wbr>選択</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+右ドラッグ<i class="fa-solid fa-rotate reverse"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">頂点<wbr>/<wbr>辺<wbr>/<wbr>面 選択切替</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">1</span>～<span class="key">3</span></span><span class="wb memo">＋Shiftで<wbr>複数選択</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ループ選択</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">Alt</span>+左クリック<i class="fa-solid fa-rotate reverse"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">マウス位置の<wbr>メッシュ等と<wbr>つながる<wbr>部分を<wbr>選択<wbr>/<wbr>解除</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">L</span>/<span class="key">Shift</span>+<span class="key">L</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">現在の<wbr>選択部分と<br />つながる<wbr>部分を<wbr>選択</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">L</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択範囲を<wbr>拡げる<wbr>/<wbr>狭める</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key numpad">+</span> / <span class="key numpad">-</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">基本の変形操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">移動</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">G</span>or 左ドラッグ<i class="fa-solid fa-rotate reverse"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">回転</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">R</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">拡大縮小</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">S</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">削除</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">X</span>or<span class="key">Delete</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">プロポーショナル編集ON<wbr>/<wbr>OFF</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">O</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">コンテクストメニューを表示</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">オブジェクトモードの<wbr>メニュー◆</span><span class="wb memo">シェーディングの<wbr>切替<wbr>/<wbr>原点変更<wbr>/<wbr>複製・リンク複製<wbr>/<wbr>スナップなど</span></td>
+        <td class="both"><span class="cell"><span class="keyset">右クリック<i class="fa-solid fa-wrench pref"></i></span><span class="wb memo">設定で右クリック選択に<wbr>している<wbr>時は<wbr>W</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">編集モードの<wbr>メニュー◆</span><span class="wb memo">頂点<wbr>/<wbr>辺<wbr>/<wbr>面の<wbr>選択モードに<wbr>応じて<wbr>表示</span></td>
+        <td class="both"><span class="cell"><span class="keyset">右クリック<i class="fa-solid fa-wrench pref"></i></span><span class="wb memo">設定で右クリック選択に<wbr>している<wbr>時は<wbr>W</span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">メッシュなどの編集</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">頂点を<wbr>作成</span><span class="wb memo">選択部分が<wbr>ある<wbr>場合は<wbr><br />そこから<wbr>伸びるように<wbr>作成される</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+右クリック<i class="fa-solid fa-rotate reverse"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">押し出し</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">E</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">インセット</span><span class="wb memo">面の<wbr>内側に<wbr>押し出し</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">I</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ループカット</span><span class="wb memo">ホイールで<wbr>分割数変更</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">R</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ベベル</span><span class="wb memo">ホイールで<wbr>分割数変更</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">B</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ナイフツール</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">K</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択頂点・辺を<wbr>切り離す</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">V</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択部分を<wbr>切り離す</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">Y</span>/<span class="key">Alt</span>+<span class="key">M</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">面・辺を<wbr>張る</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">F</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">頂点を<wbr>つないで<wbr>面を<wbr>分割</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">J</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">スライド移動</span><span class="wb memo">頂点等を<wbr>辺に<wbr>沿って<wbr>動かす</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">G</span><i class="fa-solid fa-arrow-right"></i><span class="key">G</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">複数の<wbr>頂点を<wbr>一点に<wbr>統合</span><span class="wb memo">「距離で」で<wbr>重複頂点を<wbr>削除</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">M</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ノーマルの<wbr>メニュー</span><span class="wb memo">面の<wbr>反転など</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">Alt</span>+<span class="key">N</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">複製・リンク</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">複製</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+<span class="key">D</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">リンク複製</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">Alt</span>+<span class="key">D</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">親子関係</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">複数オブジェクトを<wbr>親子化</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">P</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">親子関係を<wbr>解除</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">Alt</span>+<span class="key">P</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">オブジェクトの整理など</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">選択部分を<wbr>隠す</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">H</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択部分以外を<wbr>隠す</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+<span class="key">H</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">隠した<wbr>部分を<wbr>再表示</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Alt</span>+<span class="key">H</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">選択部分を<wbr>別オブジェクトに<wbr>分離</span></td>
+        <td class="edit"><span class="cell"><span class="keyset"><span class="key">P</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">複数の<wbr>オブジェクトを<wbr>結合</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">J</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">コレクション</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">オブジェクトを<wbr>指定コレクションに<wbr>移動</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">M</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">オブジェクトを<wbr>指定コレクションに<wbr>リンク</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">Shift</span>+<span class="key">M</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">コレクションの<wbr>表示切替</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">1</span>～<span class="key">0</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">原点・座標などの操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">スナップの<wbr>パイメニュー</span><span class="wb memo">3Dカーソル<wbr>/<wbr>選択アイテム位置変更</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+<span class="key">S</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">トランスフォーム座標系の<wbr>パイメニュー</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">,</span></span><span class="wb memo">カンマ</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">ピボットポイントの<wbr>パイメニュー</span><span class="wb memo">拡大縮小などの<wbr>基準点を<wbr>設定</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">.</span></span><span class="wb memo">ピリオド</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">オブジェクトモードでの<br />移動・変形を<wbr>データに<wbr>適用</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">A</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">オブジェクトの<br />移動<wbr>/<wbr>回転<wbr>/<wbr>拡縮を<wbr>リセット</span></td>
+        <td class="object"><span class="cell"><span class="keyset"><span class="key">Alt</span>+<span class="key">G</span>/<span class="key">R</span>/<span class="key">S</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">表示・レンダリング</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">シェーディング切替の<wbr>パイメニュー◆</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Z</span><i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">グリッドなどを<wbr>表示<wbr>/<wbr>非表示</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Alt</span>+<span class="key">Shift</span>+<span class="key">Z</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">レンダリング実行</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">F12</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">レンダリング画面を<wbr>表示切替</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">F11</span><i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">一時レンダリング範囲を<wbr>指定</span></td>
+        <td class="object"><span class="cell"><span class="keyset">(０<i class="fa-solid fa-arrow-right"></i>)<span class="key">Ctrl</span>+<span class="key">B</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">一時レンダリング範囲を<wbr>解除</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Ctrl</span>+<span class="key">Alt</span>+<span class="key">B</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">レンダリング中止</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Esc</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">便利</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="wb">お気に<wbr>入り<wbr>ツール</span><span class="wb memo">編集メニュー<i class="fa-solid fa-arrow-right"></i>プリファレンスを<wbr>保存で、<wbr>次回以降の<wbr>起動でも<wbr>有効。<wbr>自動保存も<wbr>有効</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Q</span></span><span class="wb memo">他の<wbr>メニューや<wbr>ボタン上で<wbr>右クリックして<wbr>登録。<br />削除も<wbr>項目上で<wbr>右クリック</span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">アニメーション再生<wbr>o<wbr>r<wbr>ツール切替<wbr>o<wbr>r<wbr>コマンド検索</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Space</span>/<span class="key">Shift</span>+<span class="key">Space</span><i class="fa-solid fa-wrench pref"></i></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">オブジェクト名を<wbr>変更</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">F2</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">コマンド検索</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">F3</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">直前の<wbr>操作設定を<wbr>変更</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">F9</span></span><span></td>
+      </tr>
+      <tr>
+        <td><span class="wb">直前の<wbr>操作を<wbr>繰り返し</span></td>
+        <td class="both"><span class="cell"><span class="keyset"><span class="key">Shift</span>+<span class="key">R</span></span><span></td>
+      </tr>
+    </tbody>
+  </table>
+    <footer>
+        <span><span class="key numpad">0</span></span>
+        <span>白抜き文字はテンキーパッド</span>
+        <span><i class="fa-solid fa-wrench pref"></i></span>
+        <span>編集メニュー<i class="fa-solid fa-arrow-right"></i>プリファレンス<i class="fa-solid fa-arrow-right"></i>キーマップで設定変更可</span>
+        <span><i class="fa-solid fa-rotate reverse"></i></span>
+        <span>設定のSelect With Mouse Buttonで左右ボタン反転</span>
+    </footer>
+</main>
+
+</body>
+</html>
